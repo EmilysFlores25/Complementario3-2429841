@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Complementario32429841.MainPage">
+
+    <StackLayout Padding="20">
+
+        <Image Source="promedios.png" 
+               HorizontalOptions="Center" 
+               WidthRequest="150" 
+               HeightRequest="150" ></Image>
+
+
+        <Label  Text="Ingrese las calificaciones del alumno" 
+                FontSize="Title" 
+                HorizontalOptions="Center" 
+                Margin="0,0,0,20"/>
+
+        <Entry x:Name="CalificacionEntry1" Placeholder="Ingrese la Calificacion 1 del/la estuadinate"/>
+        <Entry x:Name="CalificacionEntry2" Placeholder="Ingrese la Calificacion 2 del/la estuadinate"/>
+        <Entry x:Name="CalificacionEntry3" Placeholder="Ingrese la Calificacion 3 del/la estuadinate"/>
+        <Entry x:Name="CalificacionEntry4" Placeholder="Ingrese la Calificacion 4 del/la estuadinate"/>
+        <Entry x:Name="CalificacionEntry5" Placeholder="Ingrese la Calificacion 5 del/la estuadinate"/>
+
+        <Button Text="  Calcular Promedio" 
+                Clicked="Button_Clicked"
+                HorizontalOptions="Center" 
+                Margin="0,20,0,0"/>
+
+        <Label x:Name="promedioL" 
+               Text="" FontSize="Large" 
+               HorizontalOptions="Center" 
+               Margin="0,20,0,0"/>
+        
+    </StackLayout>
+
+</ContentPage>
